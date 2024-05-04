@@ -140,3 +140,13 @@ bool listempty ()
 {
     return(START == NULL);
 }
+
+void traverse()
+{
+    if (listempty())
+        cout << "\nList is empty" << endl;
+    else
+    {
+        cout << "\nRecords in ascending order of roll number area:" << endl;
+    }
+}
