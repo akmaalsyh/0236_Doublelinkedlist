@@ -22,8 +22,9 @@ void addNode()
 
     // Insert the new code in the list
     if (START == NULL || newNode->noMhs <= START->noMhs)
-    {
-        if (START != NULL && newNode == START-> noMhs)
+    { 
+        // step 2 insert the new node at the beginning
+        if (START != NULL && newNode->noMhs == START-> noMhs)
         {
             cout << "\033[31mDuplicate roll numbers not allowed\033]0m" << endl;
             return;
@@ -219,19 +220,19 @@ int main()
                 case '1':
                     addNode();
                     break;
-                case '2';
+                case '2':
                     deleteNode();
                     break;
-                case '3';
+                case '3':
                     traverse();
                     break;
-                case '4';
+                case '4':
                     revtraverse();
                     break;
-                case '5';
+                case '5':
                     searchData();
                     break;
-                case '6';
+                case '6':
                     return 0;
                 default:
                     cout << "\nInvalid option" << endl;
